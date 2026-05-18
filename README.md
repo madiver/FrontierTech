@@ -7,6 +7,7 @@ This repository is intended for public-facing material that other builders can r
 ## Contents
 
 - `prompts/` - reusable prompts for coding agents, project setup, reviews, and planning workflows.
+- `tools/` - common development tools with descriptions and official install links.
 
 ## Artifact Guidelines
 
