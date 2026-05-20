@@ -1,6 +1,6 @@
 # Frontier Tech
 
-Generic documents, prompts, checklists, and lightweight workflows for software projects.
+Generic prompts, skills, and tools for software projects working with AI coding agents.
 
 This repository is intended for public-facing material that other builders can reuse in their own projects. Keep artifacts practical, project-neutral, and easy to copy into a new codebase.
 
