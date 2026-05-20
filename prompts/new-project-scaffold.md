@@ -19,7 +19,8 @@ begin the concept conversation for the project.
    notes will be filled in later.
 
 3. Create a generic .gitignore with common patterns: node_modules/,
-   __pycache__/, *.pyc, .env, .DS_Store, dist/, build/, .vscode/, .idea/.
+   __pycache__/, *.pyc, .venv/, venv/, .env, .DS_Store, dist/, build/,
+   .vscode/, .idea/.
 
 4. Ask me to briefly describe this project in one or two sentences.
    The description will:
@@ -85,7 +86,37 @@ begin the concept conversation for the project.
    If I said no to GitHub, do not create a remote or push. The initial
    commit stands as a local-only checkpoint.
 
-Stop after step 6. Do not initialize spec-kit, do not generate a roadmap,
+7. Set up the language environment based on the project description.
+
+   Reread the description I provided in step 4 and identify any languages
+   mentioned (e.g., Python, Node.js, Ruby, Go, Rust).
+
+   If a language is clearly identified:
+   - Propose the standard isolation/dependency tool for that language
+     (Python -> uv venv, Node.js -> npm or pnpm init, Ruby -> bundle init,
+     Go -> go mod init, Rust -> cargo init).
+   - Ask me whether to set it up now or defer to after the concept
+     conversation.
+
+   If no language is clear from the description:
+   - Ask me which language(s) the project will use.
+   - Then propose appropriate isolation setup for each, and ask whether
+     to set it up now or defer.
+
+   If I choose to set up now:
+   - Run the appropriate command(s) to create the environment
+     (e.g., `uv venv` for Python).
+   - Verify the environment is functional with a sanity check appropriate
+     to the tool (e.g., `uv pip list` for Python, `npm --version` from
+     within the project for Node).
+   - Confirm to me that the environment was created and is functional.
+
+   If I choose to defer: do nothing further on this step. The concept
+   conversation will inform the language decision and the appropriate
+   setup will happen either during spec-kit task execution or as a
+   separate follow-on step.
+
+Stop after step 7. Do not initialize spec-kit, do not generate a roadmap,
 and do not start any spec-kit workflow until I explicitly request it.
 ```
 
