@@ -14,6 +14,7 @@ This repository accompanies the Frontier Tech video podcast, which covers fronti
 ## Contents
 
 - `prompts/` - reusable prompts for coding agents, project setup, reviews, and planning workflows.
+- `skills/` - installable Codex skills with bundled references and metadata.
 - `tools/` - common development tools with descriptions and official install links.
 
 ## Artifact Guidelines

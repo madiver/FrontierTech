@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crypto Algo Quant"
+  short_description: "PhD-level intraday OHLC pattern research."
+  default_prompt: "Perform PhD-level analysis of crypto OHLC data to discover intraday patterns, validate them with realistic costs, and produce a day-trading strategy specification with risk controls."
