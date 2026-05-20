@@ -20,6 +20,7 @@ The file should establish these generic software-engineering policies:
 - Keep changes small, incremental, and reversible.
 - Resolve root causes instead of masking defects with superficial workarounds.
 - Add abstractions only when they reduce real complexity or match an established pattern.
+- For projects using languages with dependency isolation (Python, Node.js, Ruby, etc.), set up a virtual environment or equivalent isolation mechanism as part of initial project setup. Use the project's chosen tooling (uv for Python, npm/pnpm for Node, bundler for Ruby).
 
 2. Repository Boundaries
 - Preserve module, package, and repo boundaries.
@@ -69,6 +70,7 @@ The file should establish these generic software-engineering policies:
 
 Write the file in clear Markdown with concise sections. Start with a short title and a one-paragraph purpose statement. Include a final `Project-Specific Notes` section with placeholders for:
 - Tech stack
+- Dependency management and virtual environment setup
 - Common commands
 - Architecture boundaries
 - Testing notes
