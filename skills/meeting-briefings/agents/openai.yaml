@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meeting Briefings"
+  short_description: "Short pre-meeting briefings for the day's calendar."
+  default_prompt: "Prepare short briefings for today's external meetings. Gather what I already know about the attendees from calendar details, notes, messages, and email, then use LinkedIn or another profile source if enabled and available. Write a concise attendee-context brief so I walk in informed."
