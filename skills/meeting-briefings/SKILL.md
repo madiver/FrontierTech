@@ -32,13 +32,18 @@ Match each capability to a tool that is actually present. If one cannot be satis
 ## First Run: Configure
 On the first run, look for a user-level config file, not a project file: `~/.config/meeting-briefings/config.md`. If it is missing, this is the first run: walk the user through setup, save their answers there, then offer a test run. See `references/setup.md` for the questions to ask and the config template.
 
+Do not create this config from assumptions. Save it only after the user has answered the setup questions or explicitly approved defaults.
+
+If LinkedIn/profile lookup is unconfigured, ask whether to use the user's authenticated LinkedIn or other profile source before producing the briefing, unless the user explicitly asked for calendar-only prep.
+
 ## Every Run
 1. **Pick the day.** Default to today. If the day has no qualifying meetings, for example a weekend, say so and offer the next day that does.
 2. **Read the calendar.** For each meeting, open the event itself, not just the title, and capture the time, the other attendees with any email addresses, the user's own name removed from that list, and the event description. Booking-tool invites often state the purpose ("intro, follow-up from our DM", "working session", "meet and greet"), and the external person is usually the organizer. That line anchors the brief.
 3. **Pin down who each attendee is before researching.** Invites are thin: a first name only ("Sam"), or a common name with many matches ("David Lee"). Do not trust a name search, the top hit is often the wrong person. Anchor through the messaging thread with them, the invite email, or a prior note, and when a thread exists open the profile through its link rather than searching the name. This is the single biggest source of wrong briefings.
 4. **Gather context**, cheapest to richest: what is on hand (notes, CRM, email, memory, session transcripts), then the messaging thread, then LinkedIn or another profile source when enabled and available. If using LinkedIn, read past the headline into recent posts and activity, since the headline alone can mislead. Stop when you have enough for a useful paragraph, and do not over-research a routine internal meeting.
-5. **Write the brief** using the format below. Let the stated purpose and history shape it: a cold intro, a follow-up, and a renewal need different prep, so say which it is. When identity was ambiguous, add a one-line note on who the person is and is not.
-6. **Deliver** to the destination in the config. If delivery writes outside the chat or local filesystem, or sends/posts/messages the brief anywhere, show the draft and get explicit user confirmation first unless the user already approved that exact destination for this run.
+5. **Apply the profile quality gate.** Before writing the brief, check whether profile lookup is configured. If it is not configured and the brief would rely only on calendar titles, event descriptions, or local files, pause and ask whether to use LinkedIn/profile lookup. Do not deliver a weak "profile not confirmed" brief unless the user declines profile lookup or no authenticated profile source is available. If identity is ambiguous or attendee background is thin, do not silently proceed when an authenticated profile source may resolve it. Ask for permission to use the profile source, or clearly state that the brief is calendar-only because the user declined or the source is unavailable.
+6. **Write the brief** using the format below. Let the stated purpose and history shape it: a cold intro, a follow-up, and a renewal need different prep, so say which it is. When identity was ambiguous, add a one-line note on who the person is and is not.
+7. **Deliver** to the destination in the config. If delivery writes outside the chat or local filesystem, or sends/posts/messages the brief anywhere, show the draft and get explicit user confirmation first unless the user already approved that exact destination for this run.
 
 ## Briefing Format
 One short block per meeting. Lead with who and why, not raw data. Omit any line with nothing real behind it.
